@@ -64,8 +64,8 @@ nav .nav-logo {
     font-size: 28px;
 }
 
-nav .nav-link a:nth-child(1) {
-    margin-right: 20px;
+nav .nav-link a:nth-child(2) {
+    margin-left: 20px;
 }
 
 nav .nav-link a {
@@ -78,7 +78,7 @@ main {
     background-color: var(--fade-bg);
 }
 
-main .main-head {
+.main-head {
     font-size: 70px;
 }
 
@@ -100,7 +100,7 @@ main p span {
 /* upload section  */
 
 .upload-sec{
-    padding-top: 40px !important;
+    padding-top: 30px !important;
     padding-bottom: 100px !important;
 }
 form {
@@ -126,7 +126,7 @@ form input {
 }
 form .btn-wrapper{
     width: 100%;
-    gap: 50px;
+    gap: 15px 50px;
     position: absolute;
     bottom: -40px;
     left: 50%;
@@ -186,4 +186,141 @@ footer{
 .dev-info a{
     color: var(--primary-blue) ;
     text-decoration: underline;
+}
+
+
+/* responsive  */
+@media (max-width:950px) {
+    .contain{
+        padding:10px 50px;
+    }
+}
+@media (max-width:885px) {
+    .contain{
+        padding:10px 50px;
+    }
+    .main-head{
+        font-size: 55px;
+    }
+    main p{
+        font-size: 16px;
+        width: 550px;
+    }
+    form{
+        width: 100%;
+    }
+}
+@media (max-width:700px) {
+    .contain{
+        padding:10px 30px;
+    }
+
+    nav .nav-logo{
+        font-size: 23px;
+    }
+    nav .nav-link a{
+        font-size: 16px;
+    }
+    .main-head{
+        font-size: 45px;
+    }
+    main p{
+        font-size: 16px;
+        width: 85%;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+@media (max-width:528px) {
+    .contain{
+        padding:10px 20px;
+    }
+
+    nav .nav-logo{
+        font-size: 23px;
+    }
+    nav .nav-link a{
+        font-size: 16px;
+    }
+    nav .nav-link a:nth-child(2){
+        display: none;
+    }
+    .main-head{
+        font-size: 35px;
+    }
+    main p{
+        font-size: 14px;
+        width: 85%;
+    }
+    form{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column !important;
+        gap: 10px 0px;
+    }
+}
+@media (max-width:407px) {
+    
+    .main-head{
+        font-size: 30px;
+    }
+    form .btn-wrapper{
+        flex-direction: column !important;
+        bottom: -70px;
+    }
+    .upload-sec{
+        padding-top: 20px !important;
+        padding-bottom: 150px !important;
+    }
+    form p {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+}
+@media (max-width:355px) {
+    
+    .main-head{
+        font-size: 27px;
+    }
+    main p{
+        width: 100%;
+    }
+    nav .nav-logo{
+        font-size: 18px;
+    }
+    
+}
+@media (max-width:337px) {
+    .main-head{
+        font-size: 25px;
+    }
+    nav .nav-logo{
+        font-size: 17px;
+    }
+    main p{
+        width: 100%;
+    }
+    .dev-info{
+        font-size: 14px !important;
+    }
+    
+}
+@media (max-width:307px) {
+    .main-head{
+        font-size: 20px;
+    }
+    main p{
+        width: 100%;
+    }
+    nav .nav-logo{
+        font-size: 17px;
+    }
+    .dev-info{
+        font-size: 14px !important;
+    }
+    
 }
